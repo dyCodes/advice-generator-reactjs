@@ -42,7 +42,7 @@ img {
 .card {
   width: 90vw;
   max-width: 540px;
-  padding: 42px 16px 58px;
+  padding: 44px 16px 60px;
   border-radius: 12px;
   position: relative;
   background: var(--dark-grayish-blue);
@@ -101,6 +101,7 @@ footer {
   position: fixed;
   bottom: 10px;
   width: 100%;
+  text-align: center;
 }
 .attribution {
   font-size: 11px;
@@ -115,7 +116,7 @@ footer {
 
 @media (min-width: 768px) {
   .card {
-    padding: 42px 36px 56px;
+    padding: 44px 36px 60px;
   }
   .card .quote {
     font-size: 28px;

@@ -17,19 +17,20 @@ function App() {
   }, [])
 
   return (
-    <div className="container">
+    <>
+      <main className="container">
+        <div className="card">
+          <h1 className='quote_id'>Advice #{data.id}</h1>
+          <blockquote className="quote">{data.advice}</blockquote>
 
-      <div className="card">
-        <h1 className='quote_id'>Advice #{data.id}</h1>
-        <blockquote className="quote">{data.advice}</blockquote>
+          <picture>
+            <source media="(min-width: 768px)" srcSet={Divider} />
+            <img className="divider" src={DividerMobile} alt="divider" />
+          </picture>
 
-        <picture>
-          <source media="(min-width: 768px)" srcSet={Divider} />
-          <img className="divider" src={DividerMobile} alt="divider" />
-        </picture>
-
-        <div className="btn"><img src={ButtonIcon} alt="button-icon" onClick={fetchData} /></div>
-      </div>
+          <div className="btn"><img src={ButtonIcon} alt="button-icon" onClick={fetchData} /></div>
+        </div>
+      </main>
 
       <footer>
         <div className="attribution">
@@ -37,8 +38,7 @@ function App() {
           Coded by <a href="https://github.com/dyCodes">dyCodes</a>.
         </div>
       </footer>
-
-    </div>
+    </>
   );
 }
 
